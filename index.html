@@ -23,7 +23,7 @@
     </nav>
 
     <div class="navbar-timer" id="navbar-timer">
-      <div class="timer-label">لا توجد جلسة نشطة</div>
+      <div class="timer-label">آخر جلسة</div>
       <div class="timer-value" id="navbar-timer-value">00:00:00</div>
     </div>
   </header>
@@ -65,7 +65,9 @@
       <div id="products-list" class="cards-grid"></div>
       <div class="product-actions">
         <input id="new-prod-name" placeholder="اسم المنتج">
-        <input id="new-prod-price" placeholder="السعر" type="number">
+        <input id="new-prod-price" placeholder="سعر البيع" type="number">
+        <input id="new-prod-wholesale" placeholder="سعر الجملة (Admin فقط)" type="number">
+        <input id="new-prod-stock" placeholder="الكمية" type="number" value="1">
         <button class="gaming-btn" onclick="createProduct()">إضافة منتج</button>
       </div>
     </section>
@@ -76,7 +78,7 @@
         <div class="card">
           <h3>الأسعار حسب الوضع</h3>
           <label>بلايستيشن — سعر للماتش</label><input id="price-ps-match" type="number">
-          <label>بلايستيشن — سعر للوقت</label><input id="price-ps-hour" type="number">
+          <label>بلايستيشن — سعر للوقت (الساعة)</label><input id="price-ps-hour" type="number">
           <hr>
           <label>بلياردو — Pool</label><input id="price-bil-pool" type="number">
           <label>بلياردو — Snooker</label><input id="price-bil-snooker" type="number">
@@ -103,4 +105,5 @@
   <footer class="footer">© الكَهْف</footer>
   <script src="app.js"></script>
 </body>
-</html>
+      </html> 
+
